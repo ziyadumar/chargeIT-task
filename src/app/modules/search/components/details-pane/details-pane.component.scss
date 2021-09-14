@@ -1,0 +1,17 @@
+.pane {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    background: white;
+    z-index: 1000;
+    .close-btn {
+    }
+    .item {
+      display: flex;
+        .header {
+          font-size: 1rem;
+        }
+        .val {
+        }
+    }
+}
