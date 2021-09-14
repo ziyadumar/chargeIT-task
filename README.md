@@ -16,12 +16,13 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Key Points
 - Modular design
-    - did not use lazy loading as there isnt more than one
+    - Did not use lazy loading as there isn't more than one signficant module
 - Component level breakdown
 - Input & Output (Event Emitters)
 - Pipes
+- Used TOMTOM map services and 'leaflet'
 - Dependency Injection
-- 
+- Usage of Interceptor
 - Unit Test (16 no.s)
 
 ## Nice to haves
