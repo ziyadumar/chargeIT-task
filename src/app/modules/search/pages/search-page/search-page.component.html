@@ -1,0 +1,21 @@
+<div>
+  <app-search-bar (filters)="fun()"></app-search-bar>
+  <app-map-view [data]="mapdata" (coordinates)="mapMoved($event)"></app-map-view>
+  <!-- <div class="map" id="map"></div> -->
+</div>
+
+<!-- <div class="whole">
+  <app-search-bar class="topbar" (filters)="fun()"></app-search-bar>
+  <div class="body">
+    <div class="sidepane"></div>
+    <div class="mappane">
+      <div class="map">
+        <div id="map">
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div> -->
