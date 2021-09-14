@@ -1,14 +1,10 @@
-# ChargeIt
+# ChargeIT
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
@@ -18,10 +14,33 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Key Points
+- Modular design
+    - did not use lazy loading as there isnt more than one
+- Component level breakdown
+- Input & Output (Event Emitters)
+- Pipes
+- Dependency Injection
+- 
+- Unit Test (16 no.s)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Nice to haves
+- Implemented Marker clustering
+- Created a Docker container that runs the application (ziyadumar/charge-it)
+- Unit Tests
+## Docker & Docker-compose
 
-## Further help
+To build from source (./Dockerfile)
+`docker build . -t _user/_reponame:tagname`
+Push to hub.docker.com (login is prerequisite)
+`docker push _user/_reponame:tagname`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### OR
+
+Pull from the built image (./docker-compose.yml)
+`docker-compose up -d`
+
+### Disclaimer
+
+Some data from the API are inconsistent, therefore empty values are present.
+HTTPS host required for API access. (or CORS will deny access)

@@ -7,6 +7,6 @@ export const environment = {
   tomTomKey: '1M3xBAJwZOhD74lHj93g5EaT4AwEg129',
   openCharge: {
     key: 'b52980a0-afbf-4457-9509-daae028d8d90',
-    defaultDistane: 100
+    defaultDistane: 10
   }
 };

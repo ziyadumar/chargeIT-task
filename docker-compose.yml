@@ -1,0 +1,9 @@
+
+version: "3.4"
+
+services:
+  app:
+    image: ziyadumar/charge-it
+    restart: always
+    ports:
+      - 8843:80
