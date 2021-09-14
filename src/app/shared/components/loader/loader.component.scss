@@ -1,0 +1,24 @@
+.loader-wrapper {
+    position: absolute;
+    z-index: 111111;
+    background: rgba(255, 255, 255, 0.2);
+    top: 5px;
+    // bottom: 0;
+    right: 5px;
+    // left: 0;
+    // height: 15px;
+    // width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .loader-box {
+        margin: 0 auto;
+        padding: 15px;
+        background: #fff;
+        box-shadow: 0 3px 15px rgba(#000, 0.16);
+        border-radius: 15px;
+    }
+}
+.hidden {
+    display: none !important;
+}
