@@ -31,9 +31,9 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 - Unit Tests
 ## Docker & Docker-compose
 
-To build from source (./Dockerfile)
+- Build from source (./Dockerfile)
 `docker build . -t _user/_reponame:tagname`
-Push to hub.docker.com (login is prerequisite)
+- Push to hub.docker.com (login is prerequisite)
 `docker push _user/_reponame:tagname`
 
 ### OR
