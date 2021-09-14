@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { title } from 'process';
 declare let L;
 declare let tomtom: any;
 @Component({
@@ -7,14 +8,8 @@ declare let tomtom: any;
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  title = 'ChargeIT';
 
   ngOnInit() {
-      // const map = tomtom.L.map('map', {
-      //   key: '1M3xBAJwZOhD74lHj93g5EaT4AwEg129',
-      //   basePath: '../assets/sdk',
-      //   center: [ 52.360306, 4.876935 ],
-      //   zoom: 15,
-      //   source : 'vector'
-      // });
-    }
   }
+}

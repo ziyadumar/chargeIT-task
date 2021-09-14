@@ -1,7 +1,12 @@
 <div class="pane">
-  <mat-icon class="close-btn" (click)="closePane()" aria-hidden="false">close</mat-icon>
-  <div class="item" *ngFor="let item of data">
-    <div class="header">{{item[0]}}</div>
-    <div class="val">{{item[1]}}</div>
+  <div class="top">
+    <div class="title">Details</div>
+    <mat-icon class="close-btn" (click)="closePane()" aria-hidden="false">close</mat-icon>
+  </div>
+  <div class="lower">
+    <div class="item" *ngFor="let item of data">
+      <div class="header">{{item[0]}}</div>
+      <div class="val">{{item[1]}}</div>
+    </div>
   </div>
 </div>

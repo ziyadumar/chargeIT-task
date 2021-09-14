@@ -15,7 +15,7 @@ export class DetailsPaneComponent implements OnInit {
   @Input() currentLocation: Coordinates;
   @Output() close = new EventEmitter<boolean>();
   entries;
-  constructor(private detailPipe: DetailsPanePipe) { }
+  constructor() { }
 
   details: Details;
   ngOnInit() { }

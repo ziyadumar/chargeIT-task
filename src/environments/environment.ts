@@ -5,7 +5,10 @@
 export const environment = {
   production: false,
   tomTomKey: '1M3xBAJwZOhD74lHj93g5EaT4AwEg129',
-  openChargeKey: 'b52980a0-afbf-4457-9509-daae028d8d90'
+  openCharge: {
+    key: 'b52980a0-afbf-4457-9509-daae028d8d90',
+    defaultDistane: 100
+  }
 };
 
 /*

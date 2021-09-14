@@ -27,7 +27,7 @@ export class AppInterceptor implements HttpInterceptor {
       // for open charge apis
       request = request.clone({
         params: request.params.set('output', 'json').set('camelcase', 'true')
-          .set('distanceunit', 'KM').set('key', environment.openChargeKey)
+          .set('distanceunit', 'KM').set('key', environment.openCharge.key)
           .set('maxresults', '100')
       });
     return next.handle(request).pipe(

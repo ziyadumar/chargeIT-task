@@ -1,0 +1,8 @@
+{
+  "/v3": {
+    "target": "https://api.openchargemap.io",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

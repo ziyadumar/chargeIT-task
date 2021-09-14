@@ -102,8 +102,9 @@ export class MapViewComponent implements OnInit, OnDestroy {
           btn = L.DomUtil.create('div', 'icon-locate_me_btn', container);
         btn.role = 'button';
         btn.title = 'Click me to locate you';
+        // btn.style = ''
         btn.onclick = function () {
-          map.locate({ setView: true, maxZoom: 15 });
+          map.locate({ setView: true, maxZoom: 9 });
         };
         map.on('locationfound', this.displayMarker, this);
         map.on('locationerror', this.showLocationErrorMessage, this);

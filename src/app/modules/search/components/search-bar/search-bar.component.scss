@@ -1,18 +1,84 @@
 .wrapper {
-    background: #efeeee;
-    height: 5rem;
+    display: flex;
+    // background: #efeeee;
+    height: 100%;
     width: 100%;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: center;
     .input_area {
-        .srch-fld {
+        display: flex;
+        flex-direction: column;
+        // width: 50%;
+        justify-content: center;
+        .inp {
+            display: flex;
+            align-items: center;
+            .srch-fld {
+                display: flex;
+                align-items: center;
+                background: #fbfbfb;
+                border: 1px solid #e3e3e3;
+                border-radius: 8px;
+                width: 5rem;
+                height: 28px;
+                outline: none;
+            }
+            .km {
+            }
         }
-        .btn {
-          height: 2rem;
-    width: 5rem;
-            border-radius: 33px;
-            background: #efeeee;
-            box-shadow: 22px 22px 44px #ffffff, -22px -22px 44px #e9e9e9;
+        .txt {
+            font-size: 14px;
         }
     }
-    .rdo_gp {
+    .filter {
+        display: flex;
+        flex-direction: column;
+        // width: 50%;
+        justify-content: center;
+
+        .txt {
+            font-size: 14px;
+        }
+        .rdo-gp {
+            justify-content: flex-start;
+            display: flex;
+            align-items: center;
+            column-gap: 2rem;
+            ::ng-deep .mat-checkbox .mat-checkbox-frame {
+                border-color: black;
+                background-color: #dddddd;
+            }
+
+            ::ng-deep
+                .mat-checkbox
+                .mat-checkbox-layout
+                .mat-checkbox-inner-container {
+                height: 24px;
+                width: 24px;
+            }
+
+            ::ng-deep
+                .mat-checkbox-indeterminate.mat-accent
+                .mat-checkbox-background,
+            .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+                margin-top: 1px;
+                margin-left: 1px;
+                width: 18px;
+                height: 18px;
+            }
+        }
     }
+}
+::ng-deep .mat-checkbox .mat-checkbox-frame {
+    border-color: black;
+    background-color: #dddddd;
+}
+
+::ng-deep .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
+.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 18px;
+    height: 18px;
 }

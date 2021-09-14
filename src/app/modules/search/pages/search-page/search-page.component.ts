@@ -42,7 +42,6 @@ export class SearchPageComponent implements OnInit {
   // chargersPoints: Charger[];
   constructor(
     private openCharge: OpenchargeService,
-    private location: LocationService,
     private ocdataPipe: OcdataPipe,
     private loader: LoaderService
   ) { }

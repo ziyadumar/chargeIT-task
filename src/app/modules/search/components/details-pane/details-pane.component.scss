@@ -1,17 +1,36 @@
 .pane {
     position: absolute;
-    top: 20px;
+    top: 17vh;
     right: 5px;
     background: white;
     z-index: 1000;
-    .close-btn {
-    }
-    .item {
-      display: flex;
-        .header {
-          font-size: 1rem;
+    box-shadow: 3px 8px 33px grey;
+    border-radius: 11px;
+    padding: 1rem;
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .title {
+            font-size: 25px;
         }
-        .val {
+        .close-btn {
+          cursor: pointer;
+        }
+    }
+    .lower {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        .item {
+            display: flex;
+            flex-direction: column;
+            .header {
+                font-size: 10px;
+            }
+            .val {
+                font-size: 16px;
+            }
         }
     }
 }

@@ -1,3 +1,4 @@
+<app-details-pane *ngIf="showDetails" [currentLocation]="liveLocation" [data]="detailedInfo"
+  (close)="closeDetailedInfo()"></app-details-pane>
 <div class="map" id="map">
-  <app-details-pane *ngIf="showDetails" [currentLocation]="liveLocation" [data]="detailedInfo" (close)="closeDetailedInfo()"></app-details-pane>
 </div>

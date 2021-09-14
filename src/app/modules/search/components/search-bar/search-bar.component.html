@@ -1,10 +1,16 @@
 <div class="wrapper">
   <div class="input_area">
-    <input type="number" class="srch-fld" [(ngModel)]="input_km" (ngModelChange)="search()">
-    <div class="btn">search</div>
+    <div class="txt">Range</div>
+    <div class="inp">
+      <input type="number" class="srch-fld" [(ngModel)]="input_km" (ngModelChange)="search()">
+      <div class="km">KM</div>
+    </div>
   </div>
-  <div class="rdo-gp">
-    <mat-checkbox *ngFor="let charger of chargers" [(ngModel)]="charger.isSelected" (ngModelChange)="search()">
-      {{charger.name}}</mat-checkbox>
+  <div class="filter">
+    <div class="txt">Charger Types</div>
+    <div class="rdo-gp">
+      <mat-checkbox *ngFor="let charger of chargers" [(ngModel)]="charger.isSelected" (ngModelChange)="search()">
+        {{charger.name}}</mat-checkbox>
+    </div>
   </div>
 </div>
